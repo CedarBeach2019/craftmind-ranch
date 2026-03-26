@@ -104,6 +104,20 @@ node scripts/playtest.js
 
 See [ROADMAP.md](./ROADMAP.md) for detailed plans.
 
+## CraftMind Ecosystem
+
+| Repo | Description |
+|------|-------------|
+| [craftmind](https://github.com/CedarBeach2019/craftmind) | 🤖 Core bot framework |
+| [craftmind-fishing](https://github.com/CedarBeach2019/craftmind-fishing) | 🎣 Sitka Sound fishing RPG |
+| [craftmind-studio](https://github.com/CedarBeach2019/craftmind-studio) | 🎬 AI filmmaking engine |
+| [craftmind-courses](https://github.com/CedarBeach2019/craftmind-courses) | 📚 In-game learning system |
+| [craftmind-researcher](https://github.com/CedarBeach2019/craftmind-researcher) | 🔬 AI research assistant |
+| [craftmind-herding](https://github.com/CedarBeach2019/craftmind-herding) | 🐑 Livestock herding AI |
+| [craftmind-circuits](https://github.com/CedarBeach2019/craftmind-circuits) | ⚡ Redstone circuit design |
+| [**craftmind-ranch**](https://github.com/CedarBeach2019/craftmind-ranch) | 🌾 Genetic animal breeding |
+| [craftmind-discgolf](https://github.com/CedarBeach2019/craftmind-discgolf) | 🥏 Disc golf simulation |
+
 ## License
 
 MIT
