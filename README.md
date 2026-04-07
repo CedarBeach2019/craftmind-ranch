@@ -1,47 +1,59 @@
-# craftmind-ranch
+# craftmind-ranch 🌾
 
-A genetic evolution engine for Minecraft bot populations. Bots with unique DNA compete, breed, and specialize in farm tasks over generations.
+You watch evolution do farm work. A bot permanently improves its speed at a task by 8% each time it succeeds. This is a genetic engine that runs populations of Minecraft bots. They compete, breed, and adapt to the jobs you provide.
 
-**Limitation:** This manages the evolution logic only. You'll need to connect it to your own bot system to execute tasks in-game.
+**Live instance:** https://the-fleet.casey-digennaro.workers.dev/ranch  
+You can watch populations evolve, export generation data, or fork your own ranch in about two minutes.
 
-## Try it now
-Live instance: https://the-fleet.casey-digennaro.workers.dev/ranch  
-Watch populations evolve, export generation data, or fork your own instance.
+---
 
-## Quick start
-1. **Fork** this repository
-2. Deploy to Cloudflare Workers (zero dependencies)
-3. Edit `src/dna.js` to adjust traits or mutation rates
+## Why This Exists
+Most Minecraft bot tutorials build a single, perfect bot. You might want to see a population figure out farming through trial, error, and selection. There are no hardcoded paths—just DNA, tasks, and time.
 
-## How it works
-Each bot has a DNA blueprint controlling movement, task preference, learning rate, and behavior quirks. Bots earn fitness by completing farm work. High fitness bots breed, passing mixed DNA with random mutations to offspring. Over generations, populations naturally specialize.
+---
 
-## What makes this different
-- Runs entirely on Cloudflare Workers – no local install or databases
-- Fork-first philosophy – you own your entire ranch, modify freely
-- Transparent evolution – all behavior from expressed genetic traits, inspect any bot's DNA
-- Zero dependencies – ~1200 lines of plain JavaScript
+## Quick Start
+1.  Fork this repository.
+2.  Deploy it to Cloudflare Workers. It has zero dependencies and needs no database.
+3.  Edit `src/dna.js` to adjust traits, mutation rates, or add new bot species.
 
-## Key features
-- Full genetic DNA system for heritable bot traits
-- 8 base species with unique evolutionary paths
-- Fitness awarded only for completed in-game work
-- Configurable inheritance, mutation, and selection values
-- Task confidence building – bots prefer jobs they're good at
-- Population caps prevent stagnation
+---
 
-## Extend your ranch
-This is a playground, not a finished game. Modify DNA parameters, add new farm tasks, change fitness rules, or invent new species. Make evolution favour lazy bots or set mutation rates to chaotic levels.
+## How It Works
+Each bot has a unique DNA blueprint that controls its behavior, job preferences, and learning rate. Fitness is awarded only for verified, completed work in your game. Successful bots breed, combining their DNA with small random mutations. Over generations, the population adapts.
+
+---
+
+## Key Features
+*   Heritable, mutable DNA system for every bot.
+*   Eight base species with distinct behavioral biases.
+*   Fitness is awarded solely for completed in-game work.
+*   Tunable inheritance, mutation, and selection rules.
+*   Task confidence: bots gain permanent speed boosts at jobs they repeat.
+*   Soft population caps to encourage turnover.
+*   Runs entirely on Cloudflare Workers; no external services.
+
+---
+
+## One Specific Limitation
+The simulation's evolutionary pace is directly tied to your game's task submission rate. If no tasks are completed, no fitness is awarded, and evolution stalls. It is designed for ongoing, intermittent play, not instant optimization.
+
+---
+
+## What Makes This Different
+1.  **No proxy rewards.** Bots only get fitness for completing a task, not for attempting it.
+2.  **You are the curator, not the trainer.** You set the environment and selection pressure, then let the process run.
+3.  **Fork-first isolation.** Every fork is a separate evolutionary lineage. No two ranches will produce identical bots.
+
+---
+
+## Extend Your Ranch
+This is a starting point. You can modify DNA parameters, add new farm tasks, or change what traits are rewarded. You own your fork.
 
 ## Contributing
-This project follows a fork-first philosophy. Fork the repo, build what you want, and submit a PR if it benefits others. We welcome new species, tasks, and genetic algorithm adjustments.
+Development is fork-first. Fork the repo, build what you want, and submit a PR if it benefits others. Useful contributions include new species, tasks, or adjustments to the genetic algorithm.
 
 ## License
 MIT License. Part of the Cocapn Fleet.
 
-**Attribution**: Superinstance & Lucineer (DiGennaro et al.)
-
----
-
-<div align="center">
-  <a href="https://the-fleet.casey-digennaro.workers
+<div style="text-align:center;padding:16px;color:#64748b;font-size:.8rem"><a href="https://the-fleet.casey-digennaro.workers.dev" style="color:#64748b">The Fleet</a> &middot; <a href="https://cocapn.ai" style="color:#64748b">Cocapn</a></div>
